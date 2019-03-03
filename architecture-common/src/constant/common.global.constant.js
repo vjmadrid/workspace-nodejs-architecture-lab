@@ -1,0 +1,21 @@
+exports.GLOBAL_CONSTANT = {
+    EMPTY_STRING: '',
+    NULL_STRING: 'null',
+    HYPHEN: '-',
+	SLASH: '/',
+	BACKSLASH: '\\',
+	DOUBLE_BACKSLASH: '\\\\',
+	SPACE: ' ',
+	OPEN_PARENTHESES: '(',
+	CLOSE_PARENTHESES: ')',
+	OPEN_SQUARE_BRACKET: '[',
+	CLOSE_SQUARE_BRACKET: ']',
+	ASTERISK: '*',
+	PHRASE_END: '.',
+	COLON: ':',
+	NEW_LINE: '\n',
+	TAB: '\t',
+	QUESTION_MARK: '?'
+};
+
+

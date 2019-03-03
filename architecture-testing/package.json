@@ -1,0 +1,40 @@
+{
+  "name": "architecture-testing",
+  "version": "1.0.0",
+  "description": "Testing Architecture Library",
+  "private": false,
+  "keywords": [
+    "testing",
+    "test",
+    "architecture",
+    "library"
+  ],
+  "author": "acme",
+  "license": "MIT",
+  "engines": {
+    "node": "8.10.0",
+    "npm": ">=5.6.0"
+  },
+  "main": "./src/index.js",
+  "scripts": {
+    "clean": "rm -rf package-lock.json node_modules/ && npm install",
+    "node:version": "echo 'nodejs version: ' && node -v ",
+    "package": "npm run clean && npm pack"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "eslint": "^5.14.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "istanbul": "1.1.0-alpha.1",
+    "jasmine": "^3.3.1",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-reporters": "^2.3.2",
+    "jasmine-supertest": "^1.0.0",
+    "mocha": "^6.0.1",
+    "plato": "^1.7.0",
+    "sinon": "^7.2.4",
+    "supertest": "^3.4.2"
+  },
+  "devDependencies": {}
+}

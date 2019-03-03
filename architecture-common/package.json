@@ -1,0 +1,33 @@
+{
+  "name": "architecture-common",
+  "version": "1.0.0",
+  "description": "Common Architecture Library",
+  "private": false,
+  "keywords": [
+    "common",
+    "architecture",
+    "library"
+  ],
+  "author": "acme",
+  "license": "MIT",
+  "engines": {
+    "node": "8.10.0",
+    "npm": ">=5.6.0"
+  },
+  "main": "./src/index.js",
+  "scripts": {
+    "clean": "rm -rf package-lock.json node_modules/  && npm install",
+    "node:version": "echo 'nodejs version: ' && node -v ",
+    "package": "npm run clean && npm pack",
+    "lint": "eslint ./src",
+    "test": "node ./test/resources/jasmine-runner.js",
+    "cover": "\"istanbul cover --include-all-sources ./test/resources/jasmine-runner.js && istanbul check-coverage\""
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "architecture-testing": "^1.0.0"
+  }
+}
